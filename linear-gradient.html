@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Gen | linear-gradient</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="linear-gradient.css" />
+  </head>
+  <body>
+    <!-- main section -->
+    <!-- <section id="main" class="mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+           
+            <input
+              class="color1 my-4 mr-4"
+              type="color"
+              name="color1"
+              value="#B138A8"
+            />
+            <input class="color2" type="color" name="color2" value="#FA7405" />
+            <h4 class="subtitle text-uppercase font-weight-bold">
+              Current CSS Background
+            </h4>
+            <h5 class="current-bg font-weight-bold my-4"></h5>
+            <p class="copy-property lead font-italic">Click here to copy!</p>
+            <button class="random-btn btn btn-light btn-lg mt-3 p-3">
+              Generate random
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end of main section -->
+
+    <div>
+      <nav class="navbar">
+        <!-- ----------------search input to in color for saveing -->
+        <div class="search-menu">
+          <div class="box-btn-humb">
+            <button class="btn-humb">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="box-search">
+            <input class="search" placeholder="input colors..." />
+            <i class="icon-search fas fa-share-square"></i>
+          </div>
+        </div>
+        <!-- ---------------------navbar list -->
+        <ul class="list" id="list">
+          <li class="item-list" title="home">
+            <span class="icon-list">
+              <i class="fas fa-igloo" title="home"></i>
+            </span>
+            <a class="link-list" href="index.html">Home</a>
+          </li>
+
+          <li class="item-list" title="Get linear-gradient">
+            <span class="icon-list">
+              <i class="fas fa-toggle-on" title="linear-gradient"></i>
+            </span>
+            <a class="link-list" href="#">linear-gradient</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="fas fa-archive" title="saved colors"></i>
+            </span>
+            <a class="link-list" href="saved.html">saved</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="far fa-address-card"></i>
+            </span>
+            <a class="link-list" href="about.html">About Me</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="fas fa-sms"></i>
+            </span>
+            <a
+              class="link-list"
+              href="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw"
+              target="_blank"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="contain">
+        <header contenteditable="true">
+          <h2>Color-Gen</h2>
+        </header>
+
+        <h1 class="h1">
+          linear-gradient: <br /><spa
+            class="current-bg color copy-property copied"
+          ></spa>
+        </h1>
+        <div>
+          <div id="swatch">
+            <input
+              class="color1 my-4 mr-4"
+              type="color"
+              name="color1"
+              value="#ff0000"
+              title="choose a color"
+            />
+            <input
+              class="color2"
+              type="color"
+              name="color2"
+              value="#2201fb"
+              title="choose a color"
+            />
+
+            <div class="info">
+              <h3>Pick a color</h3>
+            </div>
+          </div>
+        </div>
+
+        <button class="button-57 random-btn">
+          <span class="text">Generate Color</span><span>Thank you! 😁</span>
+        </button>
+      </div>
+    </main>
+    <script src="linear-gradient.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

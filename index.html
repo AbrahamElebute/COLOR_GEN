@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -----------------title------------------------- -->
+    <title>Color-Gen | Home</title>
+
+    <!-- ------------------css links----------------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+    rel="stylesheet"
+  </head>
+  <body>
+    <!-- ---------------------navbar-------------------- -->
+    <div>
+      <nav class="navbar">
+        <!-- ----------------search input to in color for saveing -->
+        <div class="search-menu">
+          <div class="box-btn-humb">
+            <button class="btn-humb">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="box-search">
+            <input class="search" placeholder="input colors..." />
+            <i class="icon-search fas fa-share-square"></i>
+          </div>
+        </div>
+        <!-- ---------------------navbar list -->
+        <ul class="list" id="list">
+          <li class="item-list" title="home">
+            <span class="icon-list">
+              <i class="fas fa-igloo" title="home"></i>
+            </span>
+            <a class="link-list" href="#">Home</a>
+          </li>
+
+          <li class="item-list" title="Get linear-gradient">
+            <span class="icon-list">
+              <i class="fas fa-toggle-on" title="linear-gradient"></i>
+            </span>
+            <a class="link-list" href="linear-gradient.html">linear-gradient</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="fas fa-archive" title="saved colors"></i>
+            </span>
+            <a class="link-list" href="saved.html">saved</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="far fa-address-card"></i>
+            </span>
+            <a class="link-list" href="about.html">About Me</a>
+          </li>
+
+          <li class="item-list">
+            <span class="icon-list">
+              <i class="fas fa-sms"></i>
+            </span>
+            <a
+              class="link-list"
+              href="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw"
+              target="_blank"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ---------------------the main of body of website--------  -->
+    <main>
+      <div class="contain">
+        <header><h2 contenteditable="true">Color-Gen</h2></header>
+        <h1>
+          Background-color: <br /><spa
+            class="color copied"
+            id="copy-property"
+            title="click to copy"
+            onclick="myFunction()"
+            >#f1f5f8</spa
+          >
+        </h1>
+        <button class="button-57" id="btn">
+          <span class="text">Generate Color</span><span>Thank you! 😁</span>
+        </button>
+      </div>
+    </main>
+    <!-- ----------------------------------------- -->
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

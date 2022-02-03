@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, rgb(177, 56, 168), rgb(250, 116, 5));
+}
+
+.title,
+.subtitle {
+  font-family: "Kanit", sans-serif;
+  color: black;
+}
+
+.title {
+  letter-spacing: 0.4em;
+}
+
+.subtitle {
+  letter-spacing: 0.2em;
+}
+
+.color1,
+.color2 {
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+}
+.copy-property {
+  cursor: grab;
+}
+
+.copy-property:active {
+  cursor: grabbing;
+}
